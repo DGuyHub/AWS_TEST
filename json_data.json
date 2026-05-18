@@ -1,0 +1,20 @@
+{
+  "user": {
+    "id": 101,
+    "name": "Alex Jones",
+    "email": "alex.jones@example.com",
+    "is_active": true
+  },
+  "preferences": {
+    "theme": "dark",
+    "notifications": {
+      "email": true,
+      "sms": false
+    }
+  },
+  "roles": [
+    "admin",
+    "developer"
+  ],
+  "score": 94.5
+}
