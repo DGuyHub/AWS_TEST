@@ -22,7 +22,7 @@ def getCipherKey():
 def encryptMessage(message, cipherKey, alphabet):
     encryptedMessage = ""
     uppercaseMessage = ""
-    uppercaseMessage = message.upper() #fix the bug of upper missing.
+    uppercaseMessage = message #.upper() #fix the bug of upper missing.
     for currentCharacter in uppercaseMessage:
         position = alphabet.find(currentCharacter)
         newPosition = position + int(cipherKey)
@@ -41,7 +41,7 @@ def decryptMessage(message, cipherKey, alphabet):
 def runCaesarCipherProgram():
     myAlphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     print(f'Alphabet: {myAlphabet}')
-    myAlphabet2 = getDoubleAlphabet(myAlphabet)
+    myAlphabet2 = getDoubleAlphabet(myAlphabet).lower() #fix the bug of eihter by put lower here or upper in function.
     print(f'Alphabet2: {myAlphabet2}')
     myMessage = getMessage()
     print(myMessage)
